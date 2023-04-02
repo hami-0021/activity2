@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/mid">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Decimal to Binary"
+        android:padding="15dp"
+        android:layout_margin="80dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/e_color"
+        android:textColor="@color/white"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Enter a Decimal Number"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/e_color"/>
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Answer will appear here"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/e_color"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="⚫ Click on Submit Button after entering a Decimal Number"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="⚫ Click on Reset Button to reset"
+        android:textSize="20dp" />
+
+</RelativeLayout>
